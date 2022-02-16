@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getGreetings } from '../Redux/configureStore';
+import '../styles/greeting.css';
 
 const Greeting = () => {
   const state = useSelector((state) => state);

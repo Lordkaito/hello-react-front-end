@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import configureStore from './Redux/configureStore';
 import Greeting from './components/greeting';
+// import './App.css';
 
 const store = configureStore();
 
