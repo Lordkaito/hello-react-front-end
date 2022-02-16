@@ -1,6 +1,6 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getGreetings } from "../Redux/configureStore";
+import { getGreetings } from '../Redux/configureStore';
 
 const Greeting = () => {
   const state = useSelector((state) => state);
@@ -8,12 +8,14 @@ const Greeting = () => {
   useEffect(() => {
     dispatch(getGreetings());
   }, []);
-  console.log(state);
-  return(
+  return (
     <div>
-      <h1>hello there {state.greeting}</h1>
+      <h1>
+        hello there
+        {state.greeting}
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Greeting
+export default Greeting;
